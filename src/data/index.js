@@ -2,7 +2,7 @@ import axios from "axios"
 
 export const setApiUrl = () => {
   if (process.env.NODE_ENV === "production") {
-    return "https://frozen-cliffs-40033.herokuapp.com"
+    return "https://hellofreshbackend.herokuapp.com"
   }
 
   if (process.env.NODE_ENV === "development") {
