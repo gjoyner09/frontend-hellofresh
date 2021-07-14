@@ -17,6 +17,14 @@ import {
       label: "Recipes",
       value: "/recipes"
     },
+    {
+      label: "Sign in",
+      value: "/signin"
+    },
+    {
+      label: "Sign up",
+      value: "/signup"
+    }
   ]
   
   export const Navbar = () => {

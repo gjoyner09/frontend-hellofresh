@@ -7,7 +7,7 @@ export const Recipes = () => {
     const [title, setTitle] = useState("")
     const [ingredients, setIngredients] = useState("")
     const [instructions, setInstructions] = useState("")
-    const [nutritionalInfo, setNutritionalInfo] = useState("")
+    const [nutritional_info, setNutritionalInfo] = useState("")
     const [classification, setClassification] = useState("")
     
     useEffect(() => {
@@ -20,14 +20,13 @@ export const Recipes = () => {
     
     const addRecipe = async (event) => {
         event.preventDefault()
-    
         try {
           // send a post request to add the new card to the backend
           const { data } = await api.post("/recipes", {
             title,
             ingredients,
             instructions,
-            nutritionalInfo,
+            nutritional_info,
             classification
           })
     
@@ -45,7 +44,7 @@ export const Recipes = () => {
             title: data.title,
             ingredients: data.ingredients,
             instructions: data.instructions,
-            nutritional_info: data.nutritionalInfo,
+            nutritional_info: data.nutritional_info,
             classification: data.classification,
             id: data.id
           })
@@ -82,8 +81,8 @@ export const Recipes = () => {
                 <input type="text" onChange={(e) => setInstructions(e.target.value)} value={instructions} id="instructions" label="Instructions" />
                 <label htmlFor="instructions">Instructions</label>
                 <br></br>
-                <input type="text" onChange={(e) => setNutritionalInfo(e.target.value)} value={nutritionalInfo} id="nutritionalInfo" label="Nutritional Info" />
-                <label htmlFor="nutritionalInfo">Nutritional Info</label>
+                <input type="text" onChange={(e) => setNutritionalInfo(e.target.value)} value={nutritional_info} id="nutritional_info" label="Nutritional Info" />
+                <label htmlFor="nutritional_info">Nutritional Info</label>
                 <br></br>
                 <input type="text" onChange={(e) => setClassification(e.target.value)} value={classification} id="classification" label="Classification" />
                 <label htmlFor="classification">Classification</label>

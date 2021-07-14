@@ -4,6 +4,8 @@ import { Menus } from './components/Menus'
 import { Recipes } from './components/Recipes'
 import { Navbar } from './components/Navbar'
 import { Menu } from './components/Menu'
+import { SignUp } from './components/auth/Signup'
+import { SignIn } from './components/auth/Signin'
 import {
   BrowserRouter as Router,
   Switch,
@@ -21,6 +23,12 @@ function App() {
         </Route>
         <Route path="/recipes">
           <Recipes />
+        </Route>
+        <Route path="/signin">
+          <SignIn />
+        </Route>
+        <Route path="/signup">
+          <SignUp />
         </Route>
         <Route path="/menu/:id" render={(props) => <Menu {...props} />} />
         <Route path="/">
