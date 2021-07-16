@@ -37,6 +37,7 @@ export const SignIn = () => {
             value={email}
             id="email"
         />
+        <br></br>
         <label htmlFor="password">Password:</label>
         <input
             type="text"
@@ -44,6 +45,7 @@ export const SignIn = () => {
             value={password}
             id="password"
         />
+        <br></br>
         <button type="submit">Sign In</button>
     </form>
   )

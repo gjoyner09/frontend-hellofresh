@@ -32,7 +32,7 @@ import {
   
     return (
       <nav position="sticky">
-          <h1>Hello Fresh</h1>
+          <h1>MealHub</h1>
             {navLinks.map(({ label, value }) => (
                 <>
                     <Link key={value} label={label} value={value} to={value}>{label}</Link>
