@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage renders correctly 1`] = `
+Array [
+  <h1>
+    Home
+  </h1>,
+  <p>
+    Welcome to MealHub! Click the links above to see the weekly menus and recipes. Bon Apetit!
+  </p>,
+]
+`;

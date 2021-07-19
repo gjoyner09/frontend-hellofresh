@@ -1,6 +1,14 @@
 import { useEffect, useState } from "react"
 import { api } from "../data"
 
+class AllRecipes {
+    static all() {
+      return api.get('/recipes').then(resp => resp.data);
+    }
+  }
+  
+export default AllRecipes;
+
 export const Recipes = () => {
     const [recipes, setRecipes] = useState([])
     const [errorMessage, setErrorMessage] = useState("")

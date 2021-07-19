@@ -40,7 +40,7 @@ export const SignIn = () => {
         <br></br>
         <label htmlFor="password">Password:</label>
         <input
-            type="text"
+            type="password"
             onChange={(e) => setPassword(e.target.value)}
             value={password}
             id="password"

@@ -43,7 +43,7 @@ export const Menus = () => {
             <br></br>
             <form onSubmit={addMenu}>
                 <input type="text" onChange={(e) => setWeek(e.target.value)} value={week} id="week" label="Week" />
-                <label htmlFor="week">Week (YYY-MM-DD format)</label>
+                <label htmlFor="week">Week (YYYY-MM-DD format)</label>
                 <br></br>
                 <button type="submit">Add menu</button>
             </form>
