@@ -1,7 +1,9 @@
+import api from '../data/index';
 import axios from 'axios';
 import AllRecipes from '../components/Recipes';
 
 jest.mock('axios');
+
 
 test('should fetch users', () => {
   const recipes = [{
@@ -12,7 +14,7 @@ test('should fetch users', () => {
       classification: "TestClassification"
     }];
   const resp = {data: recipes};
-  axios.get.mockResolvedValue(resp);
+  api.get.mockResolvedValue(resp);
 
   // or you could use the following depending on your use case:
   // axios.get.mockImplementation(() => Promise.resolve(resp))

@@ -1,8 +1,8 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
-import Home from '../components/Home'
+import { Home } from '../components/Home'
 
-test('Homepage renders correctly', () => {
+test('Home page renders correctly', () => {
     const component = renderer.create(
         <Home></Home>
     )
