@@ -28,7 +28,6 @@ import {
   ]
   
   export const Navbar = () => {
-    const { pathname } = useLocation()
   
     return (
       <nav position="sticky">

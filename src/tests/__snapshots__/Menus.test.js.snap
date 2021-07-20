@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menus page renders correctly 1`] = `
+Array [
+  <h1>
+    Menus
+  </h1>,
+  <br />,
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      id="week"
+      label="Week"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <label
+      htmlFor="week"
+    >
+      Week (YYYY-MM-DD format)
+    </label>
+    <br />
+    <button
+      type="submit"
+    >
+      Add menu
+    </button>
+  </form>,
+]
+`;

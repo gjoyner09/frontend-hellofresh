@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Recipes page renders correctly 1`] = `
+Array [
+  <h1>
+    Recipes
+  </h1>,
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      id="title"
+      label="Title"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <label
+      htmlFor="title"
+    >
+      Title
+    </label>
+    <br />
+    <input
+      id="ingredients"
+      label="Ingedients"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <label
+      htmlFor="ingredients"
+    >
+      Ingredients
+    </label>
+    <br />
+    <input
+      id="instructions"
+      label="Instructions"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <label
+      htmlFor="instructions"
+    >
+      Instructions
+    </label>
+    <br />
+    <input
+      id="nutritional_info"
+      label="Nutritional Info"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <label
+      htmlFor="nutritional_info"
+    >
+      Nutritional Info
+    </label>
+    <br />
+    <input
+      id="classification"
+      label="Classification"
+      onChange={[Function]}
+      type="text"
+      value=""
+    />
+    <label
+      htmlFor="classification"
+    >
+      Classification
+    </label>
+    <br />
+    <button
+      type="submit"
+    >
+      Add recipe
+    </button>
+  </form>,
+]
+`;

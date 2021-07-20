@@ -1,6 +1,6 @@
-import api from '../data/index';
-import axios from 'axios';
-import AllRecipes from '../components/Recipes';
+import { api } from '../data/index';
+import renderer from 'react-test-renderer'
+import AllRecipes, { Recipes } from '../components/Recipes';
 
 jest.mock('axios', () => {
   return {
@@ -15,7 +15,7 @@ jest.mock('axios', () => {
 })
 
 
-test('should fetch users', () => {
+test('should fetch all recipes', () => {
   const recipes = [{
       title: "TestTitle",
       ingredients: "TestIngredients",
@@ -24,10 +24,18 @@ test('should fetch users', () => {
       classification: "TestClassification"
     }];
   const resp = {data: recipes};
-  axios.get.mockResolvedValue(resp);
+  api.get.mockResolvedValue(resp);
 
   // or you could use the following depending on your use case:
   // axios.get.mockImplementation(() => Promise.resolve(resp))
 
-  return AllRecipes.all().then(data => expect(data).toEqual(users));
-});
+  return AllRecipes.all().then(data => expect(data).toEqual(recipes));
+})
+
+test('Recipes page renders correctly', () => {
+  const component = renderer.create(
+      <Recipes />
+  )
+  let tree = component.toJSON()
+  expect(tree).toMatchSnapshot()
+})

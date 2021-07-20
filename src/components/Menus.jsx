@@ -2,6 +2,14 @@ import { useEffect, useState } from "react"
 import { api } from "../data"
 import { Link } from "react-router-dom"
 
+class AllMenus {
+    static all() {
+      return api.get('/menus').then(resp => resp.data);
+    }
+  }
+  
+export default AllMenus;
+
 export const Menus = () => {
     const [menus, setMenus] = useState([])
     const [errorMessage, setErrorMessage] = useState("")
